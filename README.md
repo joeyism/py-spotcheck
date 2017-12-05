@@ -4,7 +4,7 @@ A simple CLI tool to check the spot prices of AWS instances. Available for Pytho
 ## Installation
 To install, use pip such that
 
-```python
+```bash
 pip3 install --user checkspot
 ```
 

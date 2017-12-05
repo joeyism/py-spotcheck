@@ -9,7 +9,7 @@ Installation
 
 To install, use pip such that
 
-.. code:: python
+.. code:: bash
 
     pip3 install --user checkspot
 
