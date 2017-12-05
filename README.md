@@ -20,6 +20,23 @@ checkspot
 
 and a series of questions will be prompted.
 
+The results is of the form
+
+```
++------------------+-------------------+---------------+--------------+---------------+
+| Timestamp        | Availability Zone | Instance Type | Product Desc | Spot Price($) |
++------------------+-------------------+---------------+--------------+---------------+
+| 2017-11-28 01:00 | ca-central-1a     | t2.micro      | Linux/UNIX   | 0.006100      |
+| 2017-11-28 01:00 | ca-central-1b     | t2.micro      | Linux/UNIX   | 0.006100      |
+| 2017-11-29 01:00 | ca-central-1a     | t2.micro      | Linux/UNIX   | 0.006100      |
+        .                   .                   .               .           .
+        .                   .                   .               .           .
+        .                   .                   .               .           .
+        .                   .                   .               .           .
++------------------+-------------------+---------------+--------------+---------------+
+
+```
+
 ### Repeatable Usage
 If you don't want to enter the CLI every time, you can run the CLI with the options
 
