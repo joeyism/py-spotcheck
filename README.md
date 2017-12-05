@@ -1,4 +1,4 @@
-# CheckSpot
+# SpotCheck
 A simple CLI tool to check the spot prices of AWS EC2 instances. This tool is utilized to check the recent prices of spot instances for different instance type, so the user can make an informed decision on the price to set for spot instances.
 
 ## Background
@@ -8,17 +8,17 @@ A simple CLI tool to check the spot prices of AWS EC2 instances. This tool is ut
 To install, use pip such that
 
 ```bash
-pip3 install --user checkspot
+pip3 install --user spotcheck
 ```
 
 ## Setup
-Since `checkspot` uses boto3, you'll have to setup the same way. You can view the [docs here](http://boto3.readthedocs.io/en/latest/guide/quickstart.html)
+Since `spotcheck` uses boto3, you'll have to setup the same way. You can view the [docs here](http://boto3.readthedocs.io/en/latest/guide/quickstart.html)
 
 ## Usage
 To use, run
 
 ```bash
-checkspot
+spotcheck
 ```
 
 and a series of questions will be prompted.
@@ -44,7 +44,7 @@ The results is of the form
 If you don't want to enter the CLI every time, you can run the CLI with the options
 
 ```
-checkspot --InstanceType=t2.micro --ProductDescription=Linux/UNIX --StartTime=$(date -d "3 days ago" +"%Y-%m-%d") --EndTime=$(date +"%Y-%m-%d")
+spotcheck --InstanceType=t2.micro --ProductDescription=Linux/UNIX --StartTime=$(date -d "3 days ago" +"%Y-%m-%d") --EndTime=$(date +"%Y-%m-%d")
 ```
 
 ## Version

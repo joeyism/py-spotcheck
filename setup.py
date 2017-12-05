@@ -10,7 +10,7 @@ from setuptools import setup
 
 version = re.search(
     '^__version__\s*=\s*"(.*)"',
-    open('checkspot/checkspot.py').read(),
+    open('spotcheck/spotcheck.py').read(),
     re.M
     ).group(1)
 
@@ -23,10 +23,10 @@ with open("requirements.txt", "rb") as f:
 
 
 setup(
-    name = "checkspot",
-    packages = ["checkspot"],
+    name = "spotcheck",
+    packages = ["spotcheck"],
     entry_points = {
-        "console_scripts": ['checkspot = checkspot.checkspot:main']
+        "console_scripts": ['spotcheck = spotcheck.spotcheck:main']
         },
     version = version,
     description = "A simple CLI tool to check the spot prices of AWS instances. ",
