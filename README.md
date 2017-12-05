@@ -1,6 +1,9 @@
 # CheckSpot
 A simple CLI tool to check the spot prices of AWS EC2 instances. This tool is utilized to check the recent prices of spot instances for different instance type, so the user can make an informed decision on the price to set for spot instances.
 
+## Background
+[Spot Instances](https://aws.amazon.com/ec2/spot/) are a good resource to use AWS EC2 instances for fairly cheap, and I am very frugal. This tool allows me (and you, the user) to check historical prices of spot instances to make an informed decision on the prices to set when creating an EC2 instance.
+
 ## Installation
 To install, use pip such that
 
