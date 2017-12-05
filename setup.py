@@ -18,17 +18,21 @@ version = re.search(
 with open("README.rst", "rb") as f:
     long_descr = f.read().decode("utf-8")
 
+with open("requirements.txt", "rb") as f:
+    req = f.read().decode("utf-8")
+
 
 setup(
-    name = "cmdline-bootstrap",
-    packages = ["bootstrap"],
+    name = "checkspot",
+    packages = ["checkspot"],
     entry_points = {
-        "console_scripts": ['bootstrap = bootstrap.bootstrap:main']
+        "console_scripts": ['checkspot = checkspot.checkspot:main']
         },
     version = version,
-    description = "Python command line application bare bones template.",
+    description = "A simple CLI tool to check the spot prices of AWS instances. ",
     long_description = long_descr,
-    author = "Jan-Philip Gehrcke",
-    author_email = "jgehrcke@googlemail.com",
-    url = "http://gehrcke.de/2014/02/distributing-a-python-command-line-application",
+    author = "Joey Sham",
+    author_email = "sham.joey@gmail.com",
+    url = "http://www.joeyism.com",
+    install_requires=req
     )

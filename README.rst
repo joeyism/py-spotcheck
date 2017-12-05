@@ -1,8 +1,10 @@
 CheckSpot
 =========
 
-A simple CLI tool to check the spot prices of AWS instances. Available
-for Python3 only
+A simple CLI tool to check the spot prices of AWS EC2 instances. This
+tool is utilized to check the recent prices of spot instances for
+different instance type, so the user can make an informed decision on
+the price to set for spot instances.
 
 Installation
 ------------
@@ -43,6 +45,10 @@ the options
 
 Version
 -------
+
+-  **1.0.x**
+
+   -  Fix Bugs
 
 -  **1.0.0**
 

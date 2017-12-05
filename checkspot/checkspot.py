@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from terminaltables import AsciiTable
 
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 
